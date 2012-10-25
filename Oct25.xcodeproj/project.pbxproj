@@ -13,10 +13,9 @@
 		CEB796BA1638C002005A09F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEB796B81638C002005A09F3 /* InfoPlist.strings */; };
 		CEB796BC1638C002005A09F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB796BB1638C002005A09F3 /* main.m */; };
 		CEB796C01638C002005A09F3 /* Oct25AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB796BF1638C002005A09F3 /* Oct25AppDelegate.m */; };
-		CEB796C21638C002005A09F3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB796C11638C002005A09F3 /* Default.png */; };
-		CEB796C41638C002005A09F3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB796C31638C002005A09F3 /* Default@2x.png */; };
-		CEB796C61638C002005A09F3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEB796C51638C002005A09F3 /* Default-568h@2x.png */; };
 		CEB796CE1638C123005A09F3 /* View.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB796CD1638C123005A09F3 /* View.m */; };
+		CEE79EC81638E8C400A76D5F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE79EC71638E8C400A76D5F /* Default.png */; };
+		CEE79ECA1638E8D700A76D5F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEE79EC91638E8D700A76D5F /* icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +29,10 @@
 		CEB796BD1638C002005A09F3 /* Oct25-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Oct25-Prefix.pch"; sourceTree = "<group>"; };
 		CEB796BE1638C002005A09F3 /* Oct25AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Oct25AppDelegate.h; sourceTree = "<group>"; };
 		CEB796BF1638C002005A09F3 /* Oct25AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oct25AppDelegate.m; sourceTree = "<group>"; };
-		CEB796C11638C002005A09F3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		CEB796C31638C002005A09F3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		CEB796C51638C002005A09F3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CEB796CC1638C123005A09F3 /* View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = View.h; sourceTree = "<group>"; };
 		CEB796CD1638C123005A09F3 /* View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = View.m; sourceTree = "<group>"; };
+		CEE79EC71638E8C400A76D5F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
+		CEE79EC91638E8D700A76D5F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = ../../icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +91,12 @@
 		CEB796B61638C002005A09F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEE79EC71638E8C400A76D5F /* Default.png */,
+				CEE79EC91638E8D700A76D5F /* icon.png */,
 				CEB796B71638C002005A09F3 /* Oct25-Info.plist */,
 				CEB796B81638C002005A09F3 /* InfoPlist.strings */,
 				CEB796BB1638C002005A09F3 /* main.m */,
 				CEB796BD1638C002005A09F3 /* Oct25-Prefix.pch */,
-				CEB796C11638C002005A09F3 /* Default.png */,
-				CEB796C31638C002005A09F3 /* Default@2x.png */,
-				CEB796C51638C002005A09F3 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,9 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB796BA1638C002005A09F3 /* InfoPlist.strings in Resources */,
-				CEB796C21638C002005A09F3 /* Default.png in Resources */,
-				CEB796C41638C002005A09F3 /* Default@2x.png in Resources */,
-				CEB796C61638C002005A09F3 /* Default-568h@2x.png in Resources */,
+				CEE79EC81638E8C400A76D5F /* Default.png in Resources */,
+				CEE79ECA1638E8D700A76D5F /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
