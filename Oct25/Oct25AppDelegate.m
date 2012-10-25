@@ -7,14 +7,50 @@
 //
 
 #import "Oct25AppDelegate.h"
+#import "View.h"
 
 @implementation Oct25AppDelegate
+@synthesize window = _window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    UIScreen *screen = [UIScreen mainScreen];
+    CGRect applicationFrame = screen.applicationFrame;
+    CGFloat viewHeight = applicationFrame.size.height/3;
+    
+    view1 = [[View alloc]
+             initWithFrame: CGRectMake (applicationFrame.origin.x, applicationFrame.origin.y, applicationFrame.size.width, viewHeight)
+             string: @"Hello World!"
+             backgroundColor: [UIColor redColor]
+             point:CGPointZero
+             font:[UIFont systemFontOfSize:32.0]
+             ];
+    
+    view2 = [[View alloc]
+             initWithFrame: CGRectMake (applicationFrame.origin.x, applicationFrame.origin.y + viewHeight, applicationFrame.size.width, viewHeight)
+             string: @"Hola Mundo!"
+             backgroundColor: [UIColor blueColor]
+             point: CGPointZero
+             font:[UIFont systemFontOfSize:32.0]
+             ];
+    
+    view3 = [[View alloc]
+             initWithFrame: CGRectMake (applicationFrame.origin.x, applicationFrame.origin.y + 2*viewHeight, applicationFrame.size.width, viewHeight)
+             string: @"Bonjour Monde!"
+             backgroundColor: [UIColor purpleColor]
+             point: CGPointZero
+             font:[UIFont systemFontOfSize:32.0]
+             ];
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    //self.window.backgroundColor = [UIColor whiteColor];
+    
+    [self.window addSubview:view1];
+    [self.window addSubview:view2];
+    [self.window addSubview:view3];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -33,6 +69,12 @@
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+    view1.backgroundColor = [UIColor purpleColor];
+    [view1 setNeedsDisplay];
+    view2.backgroundColor = [UIColor redColor];
+    [view2 setNeedsDisplay];
+    view3.backgroundColor = [UIColor blueColor];
+    [view3 setNeedsDisplay];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
